@@ -36,7 +36,6 @@ const selectors = {
 function openSlider(e) {
 	var sliderId = e.target.getAttribute('data-slider')
 	var slider = document.querySelector('#' + sliderId)
-	var slides = slider.children
 
 	state.sliderOpen = true
 	state.activeSlider = slider
@@ -159,11 +158,9 @@ function calculatePositions(slider, direction) {
  * Generates sliders and appends them to the document body element
  */
 function generateSliders() {
-  var body = document.querySelector('body')
   var sliders = document.querySelectorAll('.k-slider')
 
   for( var i = 0; i < sliders.length; ++i ){
-    var sliderId = sliders[i].getAttribute('data-slider')
     var slides = sliders[i].querySelectorAll('[data-slide]')
 
     sliders[i].style.overflow = 'hidden'

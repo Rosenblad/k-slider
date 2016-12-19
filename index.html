@@ -32,25 +32,36 @@
   	height: 500px;
   	background-color: red;
   }
+
+  [data-slider] div {
+  	height: 50px;
+  	width: 50px;
+  	background-color: blue;
+  	margin-bottom: 10px;
+  }
   </style>
 </head>
 <body>
 
 <div class="container">
 
-	<div class="controls">
-		<button data-slider="slider-2">Open slider 2</button>
-	</div>
-
 	<div class="project">
 
-		<div class="k-slider" id="slider-2">
-			<div data-slide="public/assets/images/1280x720-4.jpeg"></div>
-			<div data-slide="public/assets/images/1280x720-5.jpeg"></div>
-			<div data-slide="public/assets/images/1280x720-6.jpeg"></div>
+		<div data-slider="slider-2">
+			<div data-slide-background-image="public/assets/images/1280x720-4.jpeg"
+				data-slider-open="slider-2">
+			</div>
+			<div data-slide-background-image="public/assets/images/1280x720-5.jpeg"
+				data-slider-open="slider-2">
+			</div>
+			<div data-slide-background-image="public/assets/images/1280x720-6.jpeg"
+				data-slider-open="slider-2">
+			</div>
 		</div>
 
 	</div>
+
+	<div id="slider-2"></div>
 
 </div>
 

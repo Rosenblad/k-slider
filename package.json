@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --progress --colors --watch",
-    "compile": "webpack --config webpack.config.prod.js --progress --colors --optimize-minimize",
+    "compile": "webpack --config webpack.config.prod.js --progress --colors",
     "dev": "./node_modules/.bin/webpack -w -c --progress"
   },
   "author": "",
