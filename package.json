@@ -1,0 +1,19 @@
+{
+  "name": "kslider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --progress --colors --watch",
+    "compile": "webpack --config webpack.config.prod.js --progress --colors --optimize-minimize",
+    "dev": "./node_modules/.bin/webpack -w -c --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "webpack": "^1.13.2"
+  }
+}
